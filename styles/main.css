@@ -1,0 +1,345 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* root colors */
+:root {
+  font-family: system-ui;
+  --light-bleu: #ffffff;
+  --sea-green: #66A5AD;
+  --teal-bleu: #20948B;
+  --dark-bleu: #3d405b;
+  --nyanza: #C9FFE2;
+  --link-color: #e07a5f;
+}
+
+/* body position */
+.indexBody {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 15em;
+    grid-template-rows: 6em 5em 1fr auto;
+}
+
+/* nav design */
+.indexBody nav {
+    background-color: var(--sea-green);
+    color: #ffffff;
+    grid-row: 2 / 3;
+    grid-column: 1 / 5;
+    text-decoration: none;
+}
+
+/* nav ul design */
+.indexBody nav ul {
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* nav list-specific design */
+.indexBody nav ul li a {
+    border: #000000 solid 3px;
+    background-color: var(--nyanza);
+    border-radius:  0.5em;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+/* nav links design */
+a {
+  text-decoration: none;
+}
+a:link {
+  color: #000000;
+}
+a:hover {
+    color: var(--sea-green);
+}
+a:visited {
+  color: var(--link-color);
+}
+
+/* header design */
+.indexBody header {
+  background-color: #3d405b;
+  color: #f2cc8f;
+  grid-row: 1 / 2;
+  grid-column: 1 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 3em;
+}
+
+/* header font size */
+.indexBody header h2 {
+    font-size: 1.5em;
+    padding-left: 24em;
+  }
+
+  /* form position */
+  .indexBody header form {
+    position: relative;
+    padding-left: 18em;
+}
+
+/* input search-bar design */
+.indexBody input {
+    background-color: #2ec4b6;
+    border: 1em ;
+    border-radius: 0.2em;
+    height: 2em;
+    margin: 0;
+    padding-left: 2em;
+    
+    font-family: "Roboto", sans-serif;
+    color: #FFFFFF;
+}
+
+/* FA search design */
+#searchFA {
+    position: absolute;
+    color: #FFFFFF;
+    padding-top: 0.32em;
+    padding-bottom: 0.25em;
+    padding-left: 0.3em;
+}
+    
+/* button design */
+.indexBody button {
+    border: 1em;
+    border-radius: 0.8em;
+    width: 3.2em;
+    height: 1.5em;
+}
+
+/* main design */
+.indexBody main {
+    background-color: var(--light-bleu);
+    color: #000000;
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+
+    box-sizing: border-box;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* h1 text design */
+.indexBody h1 {
+    font-size: 2em;
+    font-weight: 700;
+    padding: 0.5em;
+}
+
+/* general text position */
+.indexBody p {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-left: 1em;
+}
+
+/* About Me position / border position */
+.indexBody main p:nth-of-type(1) {
+    border:#000000 solid 0.3em;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    padding-top: 1em;
+}
+
+/* footer design */
+.indexBody main + footer {
+  background-color: var(--sea-green);
+  color: #ffffff;
+  grid-row: 4 / 5;
+  grid-column: 1 / 5;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+/* side-bar general design */
+.indexBody aside {
+    background: var(--light-bleu);
+    color: #ffffff;
+    grid-row: 3 / 4;
+    grid-column: 2 / 5;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+/* image position */
+.indexBody aside img {
+    padding-top: 1.4em;
+    padding-bottom: 0.5em;
+}
+
+/* blockquote design */
+.indexBody aside blockquote {
+    box-sizing: border-box;
+    background-color: var(--sea-green);
+    position: relative;
+    border: none;
+    padding: 0.8em;
+    justify-self:center;
+}
+
+/* quotation image design */
+.indexBody aside blockquote::before {
+    content: "\275D";
+    font-size: 7em;
+    position: absolute;
+    top: -0.3em;
+    left: -0.15em;
+}
+
+/* blockquote text position */
+.indexBody blockquote p {
+padding-left: 0.8em;
+padding-top: 0.6em;
+}
+
+
+/* CV */
+#cvHeader {
+    justify-self: center;
+    align-self: center;
+    font-weight: 700;
+    font-size: 1.5em;
+    padding-left: 16.5em;
+    padding-top: 1em;
+}
+
+#contact1 {
+    padding-left: 14.5em;
+    padding-top: 1.2em;
+}
+
+#contact2 {
+    padding-left: 21.6em;
+    padding-top: 0.4em;
+}
+
+#contact3 {
+    padding-left: 28.5em;
+    padding-top: 0.4em;
+}
+
+#profileH {
+    padding-top: 2.5em;
+    padding-left: 1.7em;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#profileP {
+    padding-top: 0.5em;
+    padding-left: 2em;
+}
+
+#eduH1 {
+    padding-top: 1.5em;
+    padding-left: 1.7em;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#eduH2 {
+    padding-top: 1em;
+    padding-left: 2em;
+    font-size: 1em;
+    font-weight: 700; 
+}
+
+#eduP1 {
+    padding-top: 0.5em;
+    padding-left: 2em;
+}
+
+#eduP2 {
+    padding-top: 0.1em;
+    padding-left: 2em;
+}
+
+#eduH3 {
+    padding-top: 0.5em;
+    padding-left: 2em;
+    font-size: 1em;
+    font-weight: 700; 
+}
+
+#eduP3 {
+    padding-top: 0.5em;
+    padding-left: 2em;
+}
+
+#eduP4 {
+    padding-top: 0.1em;
+    padding-left: 2em;
+}
+
+#coursesH {
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    padding-left: 1.7em;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#courseTable {
+    padding-top: 1.5em;
+}
+
+#courseTable tr td{
+    padding-top: 0.1em;
+    padding-left: 2em;
+}
+
+#skillsH {
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    padding-left: 1.7em;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#skillsP {
+    padding-left: 2em;
+    padding-top: 0.1em;
+}
+
+#trainingH {
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    padding-left: 1.7em;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#trainingP {
+    padding-left: 2em;
+    padding-top: 0.1em;
+}
+
+#referencesH {
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    padding-left: 1.7em;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+#referencesP {
+    padding-left: 2em;
+    padding-bottom: 1em;
+}
