@@ -18,6 +18,7 @@
     display: grid;
     grid-template-columns: 1fr 15em;
     grid-template-rows: 6em 5em 1fr auto;
+    cursor: url("/images/leagueCursor.png"), auto;
 }
 
 /* nav design */
